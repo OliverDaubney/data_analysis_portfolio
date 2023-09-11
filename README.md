@@ -21,10 +21,11 @@ Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from
 ## Projects
 This section contains summaries and links for completed projects that I have created while exploring interesting topics and techniques in data analysis.
 
-**Project:** Link
-**Summary:** Summary section
-**Skills:** List of useful skills
-**Technology:** Python, Numpy, Matplotlib.
+### Project Names
+**Project:** Link  
+**Summary:** Summary section  
+**Skills:** List of useful skills  
+**Technology:** Python, Numpy, Matplotlib.  
 **Results:** The outcomes of the project.
 
 ## Education
@@ -32,15 +33,15 @@ This section contains summaries and links for completed projects that I have cre
 
 ## Tools
 ### Matplotlib
-**Toolkit:** [matplotlib_basics.ipynb](https://github.com/OliverDaubney/tools/blob/eb7c15528162508ec052eac69fc5c1ac2d6ec9de/matplotlib_basics.ipynb)
+**Toolkit:** [matplotlib_basics.ipynb](https://github.com/OliverDaubney/tools/blob/eb7c15528162508ec052eac69fc5c1ac2d6ec9de/matplotlib_basics.ipynb)  
 **Summary:** This notebook contains a concise set of examples for key features of the matplotlib library.
 
 ### Numpy
-**Toolkit:** [numpy_basics.ipynb](https://github.com/OliverDaubney/tools/blob/eb7c15528162508ec052eac69fc5c1ac2d6ec9de/numpy_basics.ipynb)
+**Toolkit:** [numpy_basics.ipynb](https://github.com/OliverDaubney/tools/blob/eb7c15528162508ec052eac69fc5c1ac2d6ec9de/numpy_basics.ipynb)  
 **Summary:** This notebook contains a concise set of examples for key features of the numpy library.
 
 ### Pandas
-**Toolkit:** [Pandas Basics](https://github.com/OliverDaubney/tools/blob/eb7c15528162508ec052eac69fc5c1ac2d6ec9de/pandas_basics.ipynb)
+**Toolkit:** [Pandas Basics](https://github.com/OliverDaubney/tools/blob/eb7c15528162508ec052eac69fc5c1ac2d6ec9de/pandas_basics.ipynb)  
 **Summary:** A basic exploration of the pandas library for managing and manipulating data within dataframes.
 
 ## Personal Development and Certificates
