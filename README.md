@@ -21,11 +21,11 @@ Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from
 ## Projects
 This section contains summaries and links for completed projects that I have created while exploring interesting topics and techniques in data analysis.
 
-### Project Names
-**Project:** Link  
-**Summary:** Summary section  
+### Analysing Disruption of Media Storage Technology in the Music Industry from 1973 to 1999
+**Project:** [music_sales_analysis_1973-1999.ipynb](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/music_sales_analysis/music_sales_analysis_1973-1999.ipynb) or [music_sales_analysis_1973-1999.pdf]()  
+**Summary:** Analysis performed both in python and R to explore the pros and cons of each software package.  
 **Skills:** List of useful skills  
-**Technology:** Python, Numpy, Matplotlib.  
+**Technology:** Python, Numpy, Matplotlib, R, tidyverse, ggplot2.  
 **Results:** The outcomes of the project.
 
 ## Education
