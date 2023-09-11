@@ -22,7 +22,9 @@ This section contains summaries and links for completed projects that I have cre
 *For education projects*
 
 ## Tools
-*For basics and summary of toolsets*
+[Matplotlib Basics](https://github.com/OliverDaubney/tools/blob/eb7c15528162508ec052eac69fc5c1ac2d6ec9de/matplotlib_basics.ipynb)
+[Numpy Basics](https://github.com/OliverDaubney/tools/blob/eb7c15528162508ec052eac69fc5c1ac2d6ec9de/numpy_basics.ipynb)
+[Pandas Basics](https://github.com/OliverDaubney/tools/blob/eb7c15528162508ec052eac69fc5c1ac2d6ec9de/pandas_basics.ipynb)
 
 ## Personal Development and Certificates
 - Data Analytics Professional (Sep 2023) (Coursera - Google) *Make this a link*
