@@ -3,7 +3,7 @@
 ## About
 Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from University of York and Doctoral Degree (PhD) in Chemistry from the University of Birmingham.
 
-[!NOTE] This portfolio focuses on my data analysis and statistics experience. If you are interested in algorithmics or data science please see their respective portfolios.
+[!NOTE]This portfolio focuses on my data analysis and statistics experience. If you are interested in algorithmics or data science please see their respective portfolios.
 
 ## Contents
 
