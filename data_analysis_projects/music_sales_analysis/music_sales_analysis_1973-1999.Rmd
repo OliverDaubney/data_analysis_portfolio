@@ -1,0 +1,166 @@
+---
+title: "Data Analytics Professional (Coursera - Google) - Case Study"
+author: "Oliver Daubney"
+date: "2023-09-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  fig.width = 6,
+  fig.height = 3,
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+## Case Study: Analysing Disruption of Media Storage Technology in the Music Industry from 1973 to 1999
+
+### Introduction
+The period of 1970-1999 saw a huge number of different data storage technologies come and go. This case study will explore the sales of different media storage technologies in the music industry from 1973 to 1999 with question such as:
+
+* What did music media sales look like between 1973 and 1999?
+* Did new media storage technology effect music sales volumes?
+* Did new media storage technology impact the sales of legacy media?
+* Is it possible to detect new media technologies by their disruptive effects on related products?
+
+Insights from this analysis may help determine disruptive action within other market environments and help companies more nimbly address market decisions.
+
+
+### Setup
+The software choice of 'R' for data analysis was due to the ease of data manipulation and visualisation within this package and to enable demonstration of my workflow by showing all the workings.
+
+#### Loading Necessary Libraries
+```{r}
+library(tidyverse)
+library(pastecs)
+options(tibble.width = Inf)
+```
+
+
+### Data Source and Integrity
+The data utilised will be key sales volume information for technology from vinyl to cassettes and cds. The data is volume of sales rather than value of sales to avoid complexity of inflation but also to help elucidate interesting features about storage capacity and desirability of more advanced technology.
+
+#### Data Source
+RIAA. Permission to cite or copy these statistics is hereby granted, as long as proper attribution is given to the Recording Industry Association of America. The data was manually accessed from the [U.S. Music Revenue Database](https://www.riaa.com/u-s-sales-database/) on Friday 25 August 2023.
+
+#### Data Integrity
+The data has been collected from the source and stored in a local CSV file. This data is not currently updated (the period of interest is 1973-1999) as such a static local file is acceptable. The data source logs reported sales information from a wide range of United States outlets, however, it will not track second-hand purchases or any non-commercial trading. The original source data is maintained by the U.S. Music Revenue Database and can be used for secondary verification against the local file to check local file integrity.
+
+* **Reliable**: The RIAA is the definitive source of revenue data for the recorded music industry in the United States.
+* **Original**: The data is collected and consolidated by the RIAA.
+* **Comprehensive**: The RIAA provides the most comprehensive data on U.S. recorded music revenues and shipments.
+* **Current**: The RIAA maintain the database with current sales information.
+* **Cited**: The RIAA dataset is the industry standard for analysing U.S. recorded music revenues and shipments.
+
+
+### Loading and Exploring the Data
+The data is stored as a local CSV file (music_sales_volumes_US_1973-1999.csv). The data
+is structured with a column for the year and then each subsequent field being a different
+technology with the sales volume in millions of units.
+```{r}
+dataset = read_csv('music_sales_volumes_US_1973-1999.csv')
+head(dataset)
+```
+
+
+### Data Cleaning and Verification
+The data cleaning/verification for this dataset checks three things:
+
+1. That each column contains a full set of non-null values.
+2. That the min/max for each column fall within a valid range.
+3. That the column data type is appropriate.
+```{r}
+stat.desc(dataset, desc=FALSE)
+```
+Note: The number of null values is the number of values equal to zero whereas the number of na values is the number of missing or empty values.
+
+
+### Basic Analysis - Consolidated Sales Volume
+At present the data includes numerous media types. These will be consolidated into three categories of base technology such as vinyl, tapes and cds.
+```{r}
+dataset <- dataset %>%
+  mutate(total_vinyl = vinyl_single + lp_ep) %>%
+  mutate(total_tapes = eight_track + cassette + cassette_single + other_tapes) %>%
+  mutate(total_cds = cd + cd_single)
+
+c_data <- select(dataset, year, total_vinyl, total_tapes, total_cds)
+head(c_data)
+```
+
+```{r}
+c_data_temp <- rbind(
+        data.frame("year"=c_data$year, "count" = c_data$total_vinyl, "type"="Vinyl"),
+        data.frame("year"=c_data$year, "count" = c_data$total_tapes, "type"="Tapes"),
+        data.frame("year"=c_data$year, "count" = c_data$total_cds, "type"="CDs")
+)
+
+ggplot(data=c_data_temp, aes(year, count)) +
+  geom_col(aes(fill=type))
+```
+
+The overall sale of media in the music industry increased over time. It is interesting to note that over the course of 20 years the most sold by volume technology switched three times, vinyl in 1975, tapes in 1985 and cds by 1995.
+
+
+### Basic Analysis - Separated Media Types
+Visualising the individual technologies as line plots can make it easier to see general trends. The sale of tapes is a good example of a new technology driving sales as the sale of records decreases, but then when CDs enter the market the sale of tapes begins to decline.
+```{r}
+ggplot(data=c_data_temp, aes(year, count)) +
+  geom_line(aes(color=type), linewidth=2)
+```
+
+
+### Further Analysis - Annual Change in Sale Volumes
+In order to plot the annual change in sales volume it is necessary to create some additional columns and calculate these values.
+```{r}
+ch_data <- c_data %>%
+  mutate(vinyl_annual_change = (total_vinyl - lag(total_vinyl))/lag(total_vinyl)) %>%
+  mutate(tapes_annual_change = (total_tapes - lag(total_tapes))/lag(total_tapes)) %>%
+  mutate(cds_annual_change = (total_cds - lag(total_cds))/lag(total_cds))
+ch_data <- ch_data %>%
+  replace(.=="NaN", 0)
+```
+
+```{r}
+ggplot(data=ch_data) +
+  geom_line(mapping=aes(x=year, y=vinyl_annual_change), linewidth=2)
+ggplot(data=ch_data) +
+  geom_line(mapping=aes(x=year, y=tapes_annual_change), linewidth=2)
+ggplot(data=ch_data) +
+  geom_line(mapping=aes(x=year, y=cds_annual_change), linewidth=2)
+```
+
+It should be noted that for both Vinyl and Tapes, the initial market
+entry is not included in the dataset. This results in the CDs leap from
+1984 to 1985 appearing irregular rather than just a normal market uptake.
+These plots seem to suggest that once the growth spends more time below
+zero than above, in a 3 year moving average, then the technology has
+peaked and there is likely to be a new technology taking the market share.
+
+
+### Observations
+
+1. Overall, the sale of music media by volume increased from 1973 to 1999.
+2. New storage media improved sales overall, taking market dominance until another technology appeared.
+3. As new storage media sale volumes increased the previous dominant technology appeared to decrease (though not instantly but with a lag time).
+4. The annual change in music media sales could be used to determine when a product has peaked and inform that there may be a market contender. This pre-empts loss of majority market share as the peak for Tape sales by volume was 3-4 years before CDs gained the majority market share.
+
+
+### Conclusions
+
+At present, there is insufficient data presented to directly link the cause
+of legacy technology decline in sales with the growth of new technologies.
+It should also be noted that this information is for sales data in the United
+States and, as such, any conclusions may not generalise to other parts of the world.
+
+1. Customers seem to enjoy embracing new and more data rich technologies with the introduction of new technologies clearly driving increases in sales volumes.
+2. Stakeholders in media technology should observe annual changes in sales volumes to help give insight about potential disruption.
+3. Legacy technology sales volumes decrease with a lag time of a few years following the release of a new technology.
+
+This initial study has highlighted some interesting trends and postulated a few
+thoughts regarding the source of this behaviour. However, further analysis and questions
+are required to understand the effect of price, song popularity, proximity to product
+and overall availability of the product on sales volumes. This is particularly important
+to understand where the technology led to significantly easier manufacturing and thus
+a more cost-effective final product.
