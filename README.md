@@ -45,7 +45,7 @@ This section contains summaries and links for completed projects that I have cre
 **Summary:** A basic exploration of the pandas library for managing and manipulating data within dataframes.
 
 ### SQLite
-**Toolkit:** [SQLite Basics] (https://github.com/OliverDaubney/tools/blob/main/SQLite_basics.ipynb)  
+**Toolkit:** [SQLite Basics](https://github.com/OliverDaubney/tools/blob/main/SQLite_basics.ipynb)  
 **Summary:** A basic exploration of the SQlite library for creating and managing data with databases.
 
 ## Personal Development and Certificates
