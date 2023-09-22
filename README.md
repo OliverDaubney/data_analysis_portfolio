@@ -21,15 +21,24 @@ Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from
 ## Projects
 This section contains summaries and links for completed projects that I have created while exploring interesting topics and techniques in data analysis.
 
+### Exploring Top 1000 Rated Productions on IMDB using SQLite
+**Project:** [Convert CSV to SQL Database](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/sql_movies_analysis/movies_db_construction.ipynb), [Cleaning Data with SQL](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/sql_movies_analysis/movies_db_cleaning.ipynb), [Data Analysis with SQL](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/sql_movies_analysis/movies_db_analysis.ipynb)  
+**Summary:** Analysis performed both in python and R to explore the pros and cons of each software package.  
+**Skills:** List of useful skills  
+**Technology:** Python, SQLite, SQL, Matplotlib and Pandas.  
+**Results:** The outcomes of the project.  
+
 ### Analysing Disruption of Media Storage Technology in the Music Industry from 1973 to 1999
-**Project:** [music_sales_analysis_1973-1999.ipynb](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/music_sales_analysis/music_sales_analysis_1973-1999.ipynb) or [music_sales_analysis_1973-1999.Rmd](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/music_sales_analysis/music_sales_analysis_1973-1999.Rmd)  
+**Project:** [Music Sales Analysis in Python](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/music_sales_analysis/music_sales_analysis_1973-1999.ipynb) or [Music Sales Analysis in R](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/music_sales_analysis/music_sales_analysis_1973-1999.Rmd)  
 **Summary:** Analysis performed both in python and R to explore the pros and cons of each software package.  
 **Skills:** List of useful skills  
 **Technology:** Python, Numpy, Matplotlib, R, tidyverse, ggplot2.  
-**Results:** The outcomes of the project.
+**Results:** The outcomes of the project.  
+
 
 ## Education
 *For education projects*
+
 
 ## Tools
 ### Matplotlib
@@ -48,8 +57,10 @@ This section contains summaries and links for completed projects that I have cre
 **Toolkit:** [SQLite Basics](https://github.com/OliverDaubney/tools/blob/main/SQLite_basics.ipynb)  
 **Summary:** A basic exploration of the SQlite library for creating and managing data with databases.
 
+
 ## Personal Development and Certificates
 - [Data Analytics Professional Certificate](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_certificates/Data_Analytics_Professional-Coursera_Google.pdf) (Sep 2023) (Coursera - Google)
+
 
 ## Contact Details
 *For contact info*
