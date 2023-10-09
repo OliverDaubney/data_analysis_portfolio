@@ -11,6 +11,7 @@ Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from
 ## Contents
 1. [About](#About)
 2. [Projects](#Projects)
+   - [Exploratory Data Analysis of Leaf Dataset](#Exploratory-Data-Analysis-of-Leaf-Dataset)
    - [Exploring Top 1000 Rated Productions on IMDB using SQL](#Exploring-Top-1000-Rated-Productions-on-IMDB-using-SQL)
    - [Analysing Disruption of Media Storage Technology in the Music Industry from 1973 to 1999](#Analysing-Disruption-of-Media-Storage-Technology-in-the-Music-Industry-from-1973-to-1999)
 <!--3. [Education](#Education)-->
@@ -25,6 +26,13 @@ Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from
 
 ## Projects
 This section contains summaries and links for completed projects that I have created while exploring interesting topics and techniques in data analysis.
+
+### Exploratory Data Analysis of Leaf Dataset
+**Project:** [Exploratory Data Analysis of Leaf Dataset](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/eda_leaf_dataset/eda_leaf_dataset.ipynb)  
+**Summary:** Import, process and analyse images of leaves to create structured data from an unstructured dataset. This project involved color analysis of the three rgb channels and shape analysis by edge detection of leaf images.  
+**Skills:** Python Coding, Image Processing, Color Analysis, Blind Color Deconvolution, Image Enhancement, Edge Detection, Data Pipeline Construction, Data Verification, Data Visualization.  
+**Technology:** Python, PIL (Image Processing), Numpy, Pandas and Matplotlib.  
+**Results:** A pipeline for processing leaf image data to generate structured datasets from the unstructured image inputs.  
 
 ### Exploring Top 1000 Rated Productions on IMDB using SQL
 **Project:** [Convert CSV to SQL Database](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/sql_movies_analysis/movies_db_construction.ipynb), [Cleaning Data with SQL](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/sql_movies_analysis/movies_db_cleaning.ipynb), [Data Analysis with SQL](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/sql_movies_analysis/movies_db_analysis.ipynb)  
@@ -69,5 +77,5 @@ This section contains summaries and links for completed projects that I have cre
 - [Data Analytics Professional Certificate](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_certificates/Data_Analytics_Professional-Coursera_Google.pdf) (Sep 2023) (Coursera - Google)
 
 
-## Contact Details
-*For contact info*
+## Contact Details  
+**Email:** oliver.j.daubney@gmail.com
