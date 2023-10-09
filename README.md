@@ -3,22 +3,24 @@
 ## About
 Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from University of York and Doctoral Degree (PhD) in Chemistry from the University of Birmingham.
 
+<!--
 > [!NOTE]  
 > This portfolio focuses on my data analysis and statistics experience. If you are interested in algorithmics or data science please see the respective portfolios.
+-->
 
 ## Contents
 1. [About](#About)
 2. [Projects](#Projects)
    - [Exploring Top 1000 Rated Productions on IMDB using SQL](#Exploring-Top-1000-Rated-Productions-on-IMDB-using-SQL)
    - [Analysing Disruption of Media Storage Technology in the Music Industry from 1973 to 1999](#Analysing-Disruption-of-Media-Storage-Technology-in-the-Music-Industry-from-1973-to-1999)
-3. [Education](#Education)
-4. [Tools](#Tools)
+<!--3. [Education](#Education)-->
+3. [Tools](#Tools)
    - [Matplotlib](#Matplotlib)
    - [Numpy](#Numpy)
    - [Pandas](#Pandas)
    - [SQLite](#SQLite)
-5. [Personal Development and Certificates](#Personal-Development-and-Certificates)
-6. [Contact Details](#Contact-Details)
+4. [Personal Development and Certificates](#Personal-Development-and-Certificates)
+5. [Contact Details](#Contact-Details)
 
 
 ## Projects
@@ -38,9 +40,10 @@ This section contains summaries and links for completed projects that I have cre
 **Technology:** Python, Numpy, Matplotlib, R, tidyverse, ggplot2.  
 **Results:** The outcomes of the project.  
 
-
+<!--
 ## Education
 *For education projects*
+-->
 
 
 ## Tools
@@ -62,6 +65,7 @@ This section contains summaries and links for completed projects that I have cre
 
 
 ## Personal Development and Certificates
+- [Introduction to Statistics](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_certificates/Introduction_To_Statistics-Coursera_Stanford_University.pdf) (Sep 2023) (Coursera - Stanford University)
 - [Data Analytics Professional Certificate](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_certificates/Data_Analytics_Professional-Coursera_Google.pdf) (Sep 2023) (Coursera - Google)
 
 
