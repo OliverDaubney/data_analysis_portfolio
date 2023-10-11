@@ -3,14 +3,10 @@
 ## About
 Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from University of York and Doctoral Degree (PhD) in Chemistry from the University of Birmingham. I have 8 years of experience working in data analytics, including time in academic research and then as an Analyst and CTO for a technological startup. I am currently a CTO of a technological startup in the IoT sector, handling high loads of data and developing aspects from data pipelining to improving UI features.
   
-[CV]()  
-[Resume]()
+[CV](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_certificates/CV_Oliver_Daubney_2023.pdf)  
 
 > [!NOTE]  
-> This repository focuses on showcasing my data handling and analysis skills. It is a key way for me to track of my progress and consolidate my learning in Data Analytics.  
-
-<!--If you are interested in algorithmics or data science please see the respective portfolios.
--->
+> This repository focuses on showcasing my data handling and analysis skills. It is a key way for me to track my progress and consolidate my learning in Data Analytics.  
 
 ## Contents
 1. [About](#About)
