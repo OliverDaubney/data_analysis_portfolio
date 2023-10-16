@@ -11,6 +11,7 @@ Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from
 ## Contents
 1. [About](#About)
 2. [Projects](#Projects)
+   - [Simulating Data Communication from Asynchronous Sources to a Database](#Simulating-Data-Communication-from-Asynchronous-Sources-to-a-Database)
    - [Exploratory Data Analysis of Leaf Dataset](#Exploratory-Data-Analysis-of-Leaf-Dataset)
    - [Exploring Top 1000 Rated Productions on IMDB using SQL](#Exploring-Top-1000-Rated-Productions-on-IMDB-using-SQL)
    - [Analysing Disruption of Media Storage Technology in the Music Industry from 1973 to 1999](#Analysing-Disruption-of-Media-Storage-Technology-in-the-Music-Industry-from-1973-to-1999)
@@ -26,6 +27,13 @@ Hi there! My name is Oliver and I have a Master of Chemistry (MChem) degree from
 
 ## Projects
 This section contains summaries and links for completed projects that I have created while exploring interesting topics and techniques in data analysis.
+
+### Simulating Data Communication from Asynchronous Sources to a Database
+**Project:** [Simulator](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/data_communication_simulator/simulation.py), [Dashboard] (https://public.tableau.com/app/profile/oliver.daubney/viz/DataCommunicationMonitoring/Dashboard-AccessControls)  
+**Summary:** A simulation was created to model asynchronous data sources accessing a database as the first stage of a data pipeline. The analytics from this simulation were incorporated into a Tableau dashboard for monitoring data inflows from complex sources.  
+**Skills:** Python Coding, Multiprocessing, Asynchronous Communication, State Management, Data Capture, Data Collection, Data Processing, Data Visualisation, Dashboarding, Data Pipelining.  
+**Technology:** Python, Multiprocessing, CSV, Tableau.  
+**Results:** A tableau dashboard for monitoring communication between data sources and a database archive.  
 
 ### Exploratory Data Analysis of Leaf Dataset
 **Project:** [Exploratory Data Analysis of Leaf Dataset](https://github.com/OliverDaubney/data_analysis_portfolio/blob/main/data_analysis_projects/eda_leaf_dataset/eda_leaf_dataset.ipynb)  
